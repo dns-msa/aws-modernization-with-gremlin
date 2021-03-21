@@ -13,7 +13,7 @@ In order to prevent charges to your account we recommend cleaning up the infrast
 # Delete CloudFormation Stacks
 aws cloudformation delete-stack --stack-name mod-f679f4081e7d405c
 
-echo 'Completed cleanup.'
+echo 'Completed cleanup..'
 ```
 
 
