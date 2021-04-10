@@ -25,10 +25,10 @@ kubectl get nodes
 
 Now, you can deploy your sock shop
 
-First clone the repo below and and go into the deploy/kubernetes folder.
+First clone the repo below and and go into the `deploy/kubernetes` folder.
 
 ```
-git clone https://github.com/microservices-demo/microservices-demo
+git clone https://github.com/liks79/microservices-demo
 ```
 Create the namespace
 
@@ -40,6 +40,14 @@ Deploy the application
 ```
 kubectl apply -f complete-demo.yaml
 ```
+
+Deploy the `front-end-svc` load balancer. (refer to `deploy/kubernetes/manifests`)
+
+```
+kubectl apply -f manifests/front-end-svc.yaml
+```
+
+
 🎉 Congrats, you've deployed the demo application on your cluster.
 
 
