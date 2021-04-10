@@ -1,5 +1,5 @@
 +++
-title = "1.5 Create Gremlin Account"
+title = "1.6 Create Gremlin Account"
 chapter = false
 weight = 4
 +++
