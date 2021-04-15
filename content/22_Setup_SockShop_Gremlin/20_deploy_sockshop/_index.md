@@ -28,7 +28,7 @@ Now, you can deploy your sock shop
 First clone the repo below and and go into the `deploy/kubernetes` folder.
 
 ```
-git clone https://github.com/liks79/microservices-demo
+git clone https://github.com/dns-msa/microservices-demo
 ```
 Create the namespace
 
