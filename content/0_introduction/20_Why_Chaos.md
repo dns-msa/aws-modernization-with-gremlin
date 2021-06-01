@@ -1,19 +1,19 @@
 +++
-title = "Why Should I Practice or Adopt Chaos Engineering?"
+title = "왜 카오스 엔지니어링을 연습하거나 적용해야 합니까?"
 chapter = false
 weight = 20
 +++
 
-There are many reasons to perform chaos engineering. We see teams across the industry turn to this practice to reduce incidents, lower the cost of downtime, train their team and prepare for moments that matter. 
+카오스 엔지니어링을 수행하는데는 여러 가지 이유가 있습니다. 업계 전반의 팀이 사고를 줄이고, 다운 타임 비용을 낮추고, 팀을 교육하고, 중요한 순간에 대비하기 위해 이러한 관행에 눈을 돌리고 있습니다.
 
-#### Reduce Incidents
-By practicing chaos engineering you are able to detect issues before they become incidents and before your customers get affected. 
+#### 사고 감소
+카오스 엔지니어링을 연습하면 문제가 사고가되기 전에 그리고 고객이 영향을 받기 전에 문제를 감지 할 수 있습니다.
 
-#### Cost of Downtime
-The cost of downtime is very expensive, the average company loses $300,000/hour of downtime. The numbers get larger with the companies that operate at internet scale, and if it's during a high traffic event like a sale or launch. You can read more on this [here](https://www.gremlin.com/blog/the-cost-of-downtime/)
+#### 다운 타임 비용
+다운 타임 비용은 매우 비싸고 평균적인 회사는 시간당 $300,000의 다운 타임을 잃습니다. 인터넷 규모로 운영되는 회사와 판매 또는 출시와 같은 트래픽이 많은 이벤트 기간 동안에는 숫자가 커집니다. 자세한 내용은 [여기](https://www.gremlin.com/blog/the-cost-of-downtime/)에서 확인할 수 있습니다.
 
-#### Train your Team 
-Give your team a chance to build their muscle memory. Run planned Chaos Engineering experiments to train your engineers on how to be on call and respond to incidents. 
+#### 팀 교육
+팀에게 체화(muscle memory)할 기회를 주세요. 계획된 카오스 엔지니어링 실험을 실행하여 엔지니어에게 전화를 걸어 사고에 대응하는 방법을 교육하십시오.
 
-#### Prepare for moments that matter
-By working on the three points above your team will feel more confident everyday as they build their respective applications and systems. Less time will be spent fire fighthing and  more time building and creating value. 
+#### 중요한 순간을 준비하세요
+위의 세 가지 지점에서 작업함으로써 팀은 각자의 응용 프로그램과 시스템을 구축 할 때 매일 더 자신감을 갖게 될 것입니다. 소방에 소요되는 시간이 줄어들고 가치를 구축하고 창출하는데 더 많은 시간이 소요됩니다.

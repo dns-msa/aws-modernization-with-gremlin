@@ -1,26 +1,26 @@
 +++
-title = "What is Chaos Engineering?"
+title = "카오스 엔지니어링이란?"
 chapter = false
 weight = 10
 +++
-First, let's take a step back and start with it's definition. 
 
-#### Definition: 
+먼저, 한 발 뒤로 물러나서 그 정의부터 시작합니다.
+
+#### 정의 :
 
 {{% notice info %}}
-"Thoughtful, planned experiments designed to reveal weakness in our systems."
+"우리 시스템의 약점을 드러내기 위해 고안된 신중하고 계획된 실습을 합니다."
 {{% /notice %}}
 
+그러나 우리는 이것을 조금 더 분해 할 수 있습니다.
 
-But we can break this down a bit more.
+사전에서 Chaos라는 단어를 찾아 보면 적어도 두 가지 의미를 찾을 수 있습니다.
+첫째, 혼돈이라는 단어의 가장 잘 알려진 의미는 “완전한 무질서와 혼란” 입니다.
+그러나 Physics 커뮤니티에서 사용되는 의미를 찾아 보면 다음을 의미합니다.
+"조건의 작은 변화에 대한 민감도가 높기 때문에 행동을 예측할 수 없을 정도로 무작위로 나타나는 복잡한 시스템의 속성"
 
-If you look up the word Chaos in a dictionary, you’ll find at least two meanings:
-First, the most known meaning of the word Chaos: “Complete disorder and confusion”.
-However, if you look up the meaning that is used in the Physics community, it means:
-“The property of a complex system whose behaviour is so unpredictable as to appear random, owing to great sensitivity to small changes in conditions.”
+그리고 이것이 바로 우리가 카오스 엔지니어링을 연습 할 때 밝혀 내려고하는 것입니다. 우리 애플리케이션의 예측 가능성과 신뢰성에 큰 영향을 미치는 조건의 변화를 찾는 것입니다.
 
-And that is exactly what we try to uncover when practicing Chaos Engineering: finding the changes in conditions that have great impact on the predictability and reliability of our applications.
+우리는 시스템에서주의 깊게 실험하여 약점을 드러내고, 그로부터 배우고, 수정하고, 지속적인 방식으로 검증함으로써 이를 수행합니다.
 
-We do that by carefully experimenting on our systems to reveal weaknesses, learn from them, fix them and verify them in an ongoing fashion.
-
-If you are interested in learning more about the history of Chaos Engineering, [feel free to read this.](https://www.gremlin.com/community/tutorials/chaos-engineering-the-history-principles-and-practice/)  
+카오스 엔지니어링의 역사에 대해 더 자세히 알고 싶다면 [여기를 자유롭게 읽어보십시오.](https://www.gremlin.com/community/tutorials/chaos-engineering-the-history-principles-and-practice/)
