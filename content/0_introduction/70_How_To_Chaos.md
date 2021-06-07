@@ -1,32 +1,32 @@
 +++
-title = "How to do Chaos Engineering?"
+title = "카오스 엔지니어링은 어떻게 하나요?"
 chapter = false
 weight = 70
 +++
 
-To implement Chaos Engineering, one should follow the scientific method to implement experiments: 
+카오스 엔지니어링을 구현하려면 과학적 방법을 따라 실험을 구현해야 합니다.
 
-1. Observe Your System 
-2. Baseline your metrics 
-3. Form a Hypothesis with **Abort Conditions**
-4. Define **Blast Radius**
-5. Run Experiment 
-6. Analyze Results
-7. Expand Scope and Re-Test
-8. Share Results
+1. 시스템 관찰
+2. 메트릭 기준
+3. **중단 조건(Abort Conditions)**으로 가설 형성
+4. **위험 범위(Blast Radius)** 정의
+5. 실험 실행
+6. 결과 분석
+7. 범위 확장 및 재테스트
+8. 결과 공유
 
 
- **Blast Radius** is the number of hosts, containers or resources that are targeted in an experiment. This is also known as the subset of a system that can be impacted by an attack; the worst case impact of a failed experiment. 
+ **위험 범위(Blast Radius)**는 실험에서 대상으로하는 호스트, 컨테이너 또는 리소스의 수입니다. 이는 공격의 영향을 받을 수 있는 시스템의 하위 집합이라고도 합니다. 실패한 실험의 최악의 영향.
 
-+ For example, usually measured in customer impact (i.e. 10% of customers could be impacted), but may be expressed in hosts, services, or containers. 
++ 예를 들어, 일반적으로 고객 영향으로 측정되지만(즉, 고객의 1 %가 영향을 받을 수 있음) 호스트, 서비스 또는 컨테이너로 표현 될 수 있습니다. 
 
- **Magnitude** is how the intensity of the attack you’re running is defined, and can also be defined as the impact that an experiment has. 
+ **크기(Magnitude)**는 실행중인 공격의 강도가 정의되는 방식이며 실험이 미치는 영향으로 정의 될 수도 있습니다.
 
-+ For example, a CPU attack would have a different magnitude if it targeted 10% of CPU versus 20% of CPU.
++ 예를 들어, CPU 공격이 CPU의 10%와 CPU의 20%를 목표로 한다면 CPU 공격은 규모가 다릅니다.
 
- **Abort Conditions** are the conditions that would cause to you to press the halt button. They are system conditions that indicate when we should stop a chaos experiment in order to avoid accidental damage
+ ** 중단 조건(Abort Conditions) **은 사용자가 중지 버튼을 눌러야하는 조건입니다. 우발적 손상을 피하기 위해 카오스 실험을 중지해야하는 시기를 나타내는 시스템 조건입니다.
 
-+ One should always define Abort Conditions. Examples of abort conditions include SLAs, Error Rates, Availability, Latency, Traffic, and any other KPI that matters to your organization.  
++ 항상 중단 조건을 정의해야합니다. 중단 조건의 예로는 SLA, 오류율, 가용성, 지연 시간, 트래픽 및 조직에 중요한 기타 KPI가 있습니다.
 
-When running chaos experiments, it is recommended to start with a small blast radius and magnitude. As you run more experiments and build more confidence, you can increase the blast radius and magnitude. 
-
+카오스 실험을 진행할 때는 작은 위험 범위와 ​​크기로 시작하는 것이 좋습니다. 더 많은 실험을 실행하고 더 많은 신뢰를 쌓으면 위험 범위의 ​​규모를 늘릴 수 있습니다.
+  
