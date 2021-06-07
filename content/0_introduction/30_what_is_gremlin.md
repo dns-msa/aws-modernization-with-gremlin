@@ -1,5 +1,5 @@
 ---
-title: "What is Gremlin?"
+title: "Gremlin 이란?"
 date: 2018-10-03T10:14:46-07:00
 draft: false
 weight: 30
@@ -7,39 +7,39 @@ weight: 30
 
 
 ![image](/images/gremlin_mascot.png)
-Gremlin provides you with the framework to safely, securely, and simply simulate real outages with an ever-growing library of attacks. Using Chaos Engineering to improve system resilience, Gremlin’s “Failure as a Service” makes it easy to find weaknesses in your system before they cause problems for your customers.
+Gremlin은 지속적으로 증가하는 공격 라이브러리를 통해 실제 중단을 안전하고 안전하게 시뮬레이션 할 수 있는 프레임 워크를 제공합니다. Chaos Engineering을 사용하여 시스템 복원력을 향상시키는 Gremlin의 "Failure as a Service"를 사용하면 고객에게 문제를 일으키기 전에 시스템의 약점을 쉽게 찾을 수 있습니다.
 
-We offer several categories of attacks to inject faults into your system:
+시스템에 결함을 주입하기 위해 여러 범주의 공격을 제공합니다.
 
 #### Resource Gremlins
-Resource gremlins are a great starting point — simple to run and understand. They reveal how your service degrades when starved of CPU, memory, IO, or disk.
+리소스 그렘린은 카오스 엔지니어링의 실행과 이해를 위해 간단하고 훌륭한 출발점입니다. CPU, 메모리, IO 또는 디스크가 부족할 때 서비스가 어떻게 저하되는지 보여줍니다.
 
-|Gremlin  | Impact                                                        |
+|그렘린  | 영향                                                        |
 |--------|----------------------------------------------------------------|
-| CPU    |  Generates high load for one or more CPU cores.                |
-| Memory |  Allocates a specific amount of RAM.                           |
-| IO     |  Puts read/write pressure on I/O devices such as hard disks    |
-| Disk   |  Writes files to disk to fill it to a specific percentage.     |
+| CPU    |  하나 이상의 CPU 코어에 대해 높은 로드를 생성합니다.                |
+| Memory |  특정 양의 RAM을 할당합니다.                          |
+| IO     |  하드 디스크와 같은 I/O 장치에 읽기/쓰기 압력을 가합니다.   |
+| Disk   |  파일을 디스크에 기록하여 정해진 비율로 채웁니다.    |
 
 #### State Gremlins
 
-State gremlins introduce chaos into your infrastructure so that you can observe how well your service handles it or fails.
+State gremlins는 인프라에 혼란(chaos)을 야기하므로 서비스가 이를 얼마나 잘 처리하는지 또는 실패하는지 관찰 할 수 있습니다.
 
-|Gremlin         | Impact                                                         |
+|그렘린         | 영향                                                         |
 |----------------|----------------------------------------------------------------|
-| Shutdown       |  Performs a shutdown (and an optional reboot) on the host operating system to test how your system behaves when losing one or more cluster machines.                                              |
-| Time Travel    | Changes the host’s system time, which can be used to simulate adjusting to daylight saving time and other time-related events.                                                              |
-| Process Killer |  Kills the specified process, which can be used to simulate application or dependency crashes. (Note: does not work for PID 1, consider a Shutdown attack instead)                                    |
+| Shutdown       |  호스트 운영 체제에서 종료(및 선택적 재부팅)를 수행하여 하나 이상의 클러스터 시스템이 손실 될 때 시스템이 어떻게 작동하는지 테스트합니다.                                              |
+| Time Travel    |  일과 시간 및 기타 시간 관련 이벤트에 대한 조정을 시뮬레이션 하는데 사용할 수 있는 호스트의 시스템 시간을 변경합니다.                                                     |
+| Process Killer |  애플리케이션 또는 종속성 충돌을 시뮬레이션 하는데 사용할 수 있는 지정된 프로세스를 종료합니다. (참고 : PID 1에서는 작동하지 않습니다. 대신 Shutdown 공격을 고려하십시오.)                                   |
 
 #### Network Gremlins
 
-Network gremlins allow you to see the impact of lost or delayed traffic to your application. Test how your service behaves when you are unable to reach one of your dependencies, internal or external. Limit the impact to only the traffic you want to test by specifying ports, hostnames, and IP addresses.
+Network gremlins을 사용하면 손실되거나 지연된 트래픽이 애플리케이션에 미치는 영향을 확인할 수 있습니다. 내부 또는 외부 종속성 중 하나에 도달 할 수 없을 때, 서비스가 어떻게 작동하는지 테스트합니다. 포트, 호스트 이름 및 IP 주소를 지정하여 테스트하려는 트래픽으로만 영향을 제한하십시오.
 
-|Gremlin      | Impact                                                        |
+|그렘린      | 영향                                                        |
 |-------------|---------------------------------------------------------------|
-| Blackhole   |  Drops all matching network traffic.                          |
-| Latency     |  Injects latency into all matching egress network traffic     |
-| Packet Loss |  Induces packet loss into all matching egress network traffic.|
-| DNS         |  Blocks access to DNS servers.                                |
+| Blackhole   |  일치하는 모든 네트워크 트래픽을 삭제합니다.                          |
+| Latency     |  일치하는 모든 송신 네트워크 트래픽에 지연 시간을 주입합니다.    |
+| Packet Loss |  일치하는 모든 송신 네트워크 트래픽에 패킷 손실을 유도합니다.|
+| DNS         |  DNS 서버에 대한 액세스를 차단합니다.                               |
 
-More information on what Gremlin is all about can be found on the official [Gremlin documentation page](insert link to Gremlin documentation page).
+Gremlin에 대한 자세한 내용은 공식 [Gremlin 문서 페이지](https://www.gremlin.com/docs/?ref=nav)에서 찾을 수 있습니다.
