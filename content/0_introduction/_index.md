@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "소개"
 weight: 5
 chapter: true
 draft: false
