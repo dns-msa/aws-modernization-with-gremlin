@@ -1,26 +1,27 @@
 ---
-title: "Gremlin Benefits"
+title: "Gremlin 장점"
 date: 2018-10-03T10:15:55-07:00
 draft: false
 weight: 50
 ---
 ![image](/images/gremlin_mascot.png)
-We have seen many Gremlin Customers be successfull in their Chaos Engineering adoption.
+많은 Gremlin 고객이 Chaos Engineering 채택에 성공한 것을 보았습니다.
 
 
 + [Backcountry](https://www.gremlin.com/customers/backcountry/)
-    - Reduce Incidents: Zero Incidents during Black Friday after getting started with Chaos Engineering. 
-    - Their MTTD Reduced to 5 minutes From multiple hour MTTD the previous year
+    - 사고 감소 : 카오스 엔지니어링을 시작한 후 블랙 프라이데이 동안 사고 제로.
+    - MTTD가 전년의 여러 시간 MTTD에서 5 분으로 감소
 
 + [Qualtrics](https://www.gremlin.com/customers/qualtrics/)
-    - Dependency testing with Chaos Engineering saved them 500+ engineering hours  
-    - Prepared each engineering teams for region failover
+    - Chaos Engineering을 사용한 종속성 테스트로 500 시간 이상의 엔지니어링 시간 절약
+    - 지역 장애 조치를 위한 각 엔지니어링 팀 준비
 
-We have also: 
 
-+ helped financial institutions meet compliance
-+ helped financial institutions launch new products 
-+ helped e-commerce companies improve their employee morale
-+ helped retail companies fine tune their monitoring
+우리는 또한 :
 
-You can read and learn more about our customer case studies via [our website.](https://www.gremlin.com/customers/) 
++ 금융 기관의 규정 준수 지원
++ 금융 기관의 신제품 출시 지원
++ 전자 상거래 회사의 직원 사기 개선 지원
++ 소매 회사가 모니터링을 미세 조정하도록 지원
+
+[웹 사이트](https://www.gremlin.com/customers/)를 통해 고객 사례 연구를 읽고 자세히 알아볼 수 있습니다.
