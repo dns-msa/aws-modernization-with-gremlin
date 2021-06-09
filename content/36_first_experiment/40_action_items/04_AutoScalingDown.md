@@ -1,55 +1,58 @@
 +++
-title = "2.5.4 AutoScaling Down Setup"
+title = "2.5.4 AutoScaling Down 설정"
 chapter = true
 weight = 04
 +++
 
-# 2.5.4 AutoScaling Down Setup
-## Set up Auto Scaling Down: 
+# 2.5.4 AutoScaling Down 설정
 
-We want to follow the same steps as earlier, but instead add a new policy that will be called **`ScaleDown`**, and we we will be creating a new alarm for it. 
 
-> This Alarm will be for when CPU utilization is less than or equal to (<=) 30% within a 1 minute.
+## Auto Scaling Down을 설정합니다.
 
-We can see the **"ScaleUp"** Poly and now we are going to press **"Add policy"** to set up our auto scaling down policy. 
+이전과 동일한 단계를 따르고 싶지만 대신 **`ScaleDown`** 이라는 새 정책을 추가하고 이에 대한 새 경보를 생성합니다.
+
+> 이 경보는 CPU 사용률이 1분 내에 30% 이하 (<=) 일 때 발생합니다.
+
+**"ScaleUp"** 정책을 볼 수 있으며 이제 **"Add Policy"**를 눌러 자동 축소 정책을 설정합니다.
 ![Container Insights Results](/images/aws_create_down_policy.png)
 
-In the next page Select **Automatic scaling**, followed by **Add Policy.**
+다음 페이지에서 **Automatic scaling**을 선택한 다음 **Add Policy**를 선택합니다.
 
-For **"Policy type"** select **"Simple scaling"**
+**"Policy type"**에서 **"Simple scaling"**을 선택합니다.
 
-For Scaling Policy name, feel free to call it **`ScaleDown`**. We will now need to setup a new CloudWatch alarm for it, go ahead and select **"Create a CloudWatch alarm"**.
-## Set up Auto Scaling: Configure Cloudwatch
+Scaling Policy 이름은 **`ScaleDown`**이라고 입력합니다. 이제 새 CloudWatch 경보를 설정하고 **"Create a CloudWatch alarm"**을 선택해야 합니다.
 
-We need to find the metric we want to alarm for first. Select **"Select Metric"**, **"Container Insights"**, followed by **"ClusterName, InstanceId, NodeName"**.  Locate `node_cpu_utilization` and press **"Select Metric".**  
+## Auto Scaling 설정 : Cloudwatch 구성
+
+먼저 경보 할 측정 항목을 찾아야합니다. **"Select Metric"**, **"Container Insights"**, **"ClusterName, InstanceId, NodeName"**을 차례로 선택합니다. `node_cpu_utilization`을 찾아 **"Select Metric"** 을 누릅니다.
+
 
 ![Container Insights Results](/images/aws_select_cpu_utilization.png)
 
- Now we get to specify metrics and conditions. Under the first section, just change the period to be **"1 minute".**
+이제 메트릭과 조건을 지정합니다. 첫 번째 섹션에서 기간을 **"1 minute"**으로 변경합니다.
 
 ![Container Insights Results](/images/aws_period_1min.png)
 
-Let's move to **"Conditions"**:
+**"Conditions"**으로 이동하겠습니다.
 
-1. Leave **Static** selected.
-2. Choose **"Lower/Equal"** 
-3. For the box of threshold value, type **`30`**.
-Go ahead and press **"Next"**.
+1. **Static**은 선택된 상태로 둡니다.
+2. **"Lower/Equal"**을 선택합니다.
+3. 임계값 상자에 **`30`**을 입력합니다.
+계속해서 **"Next"**을 누릅니다.
 
 
-
-> **When CPU is less than or equal to 30%, the alarm will be triggered.**
-
+> ** CPU가 30 % 이하이면 알람이 트리거됩니다. **
 
 ![Threshold 30](/images/aws_conditions_30.png)
 
-We now need to configure the actions that happen when the alarm gets triggered. 
 
-For **"Alarm state trigger"** leave it as **"In alarm"**. Under that, we want to go ahead and select **"Select an existing SNS topic"**. and choose the **"CPU_Increase"** we created earlier and press **"Next"**.  Now need to give it our alarm a name, let's keep it simple and name it `ScaleDown-Alarm` and press **"Next"**. Go ahead and review the steps and don't forget to press **"Create alarm"**. 
+이제 알람이 트리거 될 때 발생하는 작업을 구성해야 합니다.
 
-> We want our Auto Scaling Policy to be triggered when the alarm we just created goes off and we want AWS to wait 10 minutes (600 seconds) before the auto scaling policy gets applied again. 
+**"Alarm state trigger"**의 경우 **"In alarm"**으로 둡니다. 그 아래에서 **"Select an existing SNS topic"**을 선택합니다. 앞서 만든 **"CPU_Increase"**를 선택하고 **"Next"**를 누릅니다. 이제 알람에 이름을 지정해야 합니다. 간단하게 이름을 `ScaleDown-Alarm`으로 지정하고 **"Next"**를 누릅니다. 계속해서 단계를 검토하고 **"Create alarm"**를 누르는 것을 잊지 마세요.
+
+> 방금 생성한 경보가 울릴 때 Auto Scaling 정책이 트리거되고 Auto Scaling 정책이 다시 적용되기 전에 AWS가 10분 (600 초)을 기다리도록 합니다.
 
 
-Switch back to the "Create scaling policy" tab we were in earlier, and press the refresh icon to locate the `ScaleDown-Alarm` CloudWatch alarm we just created. Under "Take the Action" Choose to **"Set to" "3" "capacity unit"**. Lastly, for **"seconds before allowing another scaling activity"**, make it **`600`** and press **"Create"**
+이전에 있었던 "Create scaling policy" 탭으로 다시 전환하고 새로 고침 아이콘을 눌러 방금 생성한 `ScaleDown-Alarm` CloudWatch 경보를 찾습니다. "Take the Action"에서 **"Set to" "3" "capacity unit"**을 선택합니다. 마지막으로 **"seconds before allowing another scaling activity"** 를 **`600` **으로 설정하고 **"Create"**를 누릅니다.
 
 ![AWS Create scaling policy](/images/aws_create_scaling_policy_down.png)

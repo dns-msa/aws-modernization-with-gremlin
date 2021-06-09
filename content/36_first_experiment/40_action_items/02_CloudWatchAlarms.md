@@ -1,45 +1,47 @@
 +++
-title = "2.5.2 CloudWatch Alarms"
+title = "2.5.2 CloudWatch 경보"
 chapter = true
 weight = 02
 +++
 
-# 2.5.2 CloudWatch Alarms
-## Set up Auto Scaling: Configure Cloudwatch
+# 2.5.2 CloudWatch 경보
+## Auto Scaling 설정 : Cloudwatch 구성
 
-We need to find the metric we want to alarm for first. Select **"Select Metric"**, **"Container Insights"**, followed by **"ClusterName, InstanceId, NodeName"**.  Locate `node_cpu_utilization` on any of the EC2 instances and press **"Select Metric".**  
+먼저 경보할 측정 항목을 찾아야 합니다. **"Select Metric"**, **"Container Insights"**, **"ClusterName, InstanceId, NodeName"**을 차례로 선택합니다. EC2 인스턴스에서 `node_cpu_utilization`을 찾아 **"Select Metric"**을 누릅니다.
 
 ![Container Insights Results](/images/aws_select_cpu_utilization.png)
 
- Now we get to specify metrics and conditions. Under the first section, just change the period to be **"1 minute".**
+ 이제 메트릭과 조건을 지정합니다. 첫 번째 섹션에서 기간을 **"1 minute"**으로 변경합니다.
 
 ![Container Insights Results](/images/aws_period_1min.png)
 
-Let's move to **"Conditions"**:
+**"Conditions"**으로 이동하겠습니다.
 
-1. Leave **Static** selected.
-2. Choose **"Greater"** 
-3. For the box of threshold value, type **`50`**.
-Go ahead and press **"Next"**.
+1. **Static**은 선택된 상태로 둡니다.
+2. **"Greater"**를 선택합니다.
+3. 임계값 상자에 **`50`**을 입력합니다.
+계속해서 **"Next"**을 누릅니다.
+
 
 ![Threshold 50](/images/aws_conditions_50.png)
 
-> **When CPU is greater than 50, the alarm will be triggered.**
 
-We now need to configure the actions that happen when the alarm gets triggered. 
+> **CPU가 50보다 크면 알람이 트리거됩니다.**
 
-For **"Alarm state trigger"** leave it as **"In alarm"**. Under that, we want to go ahead and select **"Create new Topic"**. Let's give the topic a name, I am going to use `CPU_Increase`. Now give it your email to receive the notification and press **Create topic**.
+이제 알람이 트리거 될 때 발생하는 작업을 구성해야 합니다.
 
- Lastly, leave everything else as it is and press **"Next"**.
+**"Alarm state trigger"**의 경우 **"In alarm"**으로 둡니다. 그 아래에서 **"Create new Topic"**을 선택합니다. 주제에 이름을 지정하고 `CPU_Increase`를 사용하겠습니다. 이제 알림을 받을 이메일을 주고 **Create topic**를 누릅니다.
+
+마지막으로 나머지는 모두 그대로 두고 **"Next"**을 누릅니다.
 
 ![Configure Alarm](/images/aws_configure_alarm_actions.png)
 
-We are going to receive an email titled `AWS Notification - Subscription Confirmation`, go to your and locate it and click the **"Confirm subscription"** link. 
+`AWS Notification - Subscription Confirmation`이라는 제목의 이메일을 받으면 해당 이메일로 이동하여 **"Confirm subscription"** 링크를 클릭합니다.
 
 ![AWS Notification - Subscription Confirmation](/images/aws_notification_subscription_confirmation.png)
 
-You will then see a confimation like this:
+그러면 다음과 같은 확인이 표시됩니다.
 ![AWS Notification - confirmed](/images/aws_subscription_confirmed.png)
 
 
-Going back to the CloudWatch "Configure actions" page, we now need to give it our alarm a name, let's keep it simple and name it `ScaleUp-Alarm` and press **"Next"**. Go ahead and review the steps and don't forget to press **"Create alarm"**. 
+CloudWatch "Configure actions" 페이지로 돌아가 이제 경보 이름을 지정하고 간단하게 유지하고 `ScaleUp-Alarm` 이름을 지정하고 **"Next"**를 누릅니다. 계속해서 단계를 검토하고 **"Create alarm"**를 누르는 것을 잊지 마세요.
