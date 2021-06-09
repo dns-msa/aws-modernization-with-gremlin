@@ -1,30 +1,32 @@
 +++
-title = "1.7 Deploy Gremlin"
+title = "1.7 Gremlin 배포"
 chapter = true
 weight = 07
 +++
 
-# Gremlin Deploy
+# Gremlin 배포
 
-Let's find your credentials, click the **Avatar** Icon on the top right, and click **“Team Settings"**:
+자격 증명을 찾고 오른쪽 상단의 **Avatar** 아이콘을 클릭 한 다음 **"Team Settings"**을 클릭합니다.
 
 ![Gremlin Navigation to Team Settings](/images/gremlin/gremlin_people_team.png)
 
-Select the “Configuration” tab:
+“Configuration”탭을 선택합니다.
 
 
-We will go back to our terminal and start by adding the repo for the Gremlin Helm chart:
+터미널로 돌아가 Gremlin Helm 차트에 대한 리포지토리를 추가하여 시작합니다.
 ```
 helm repo add gremlin https://helm.gremlin.com
 
 ```
 
-**If you are running this workshop on your own**, create a namespace for the Gremlin Kubernetes client:
+**이 워크샵을 직접 실행하는 경우**, Gremlin Kubernetes 클라이언트용 네임 스페이스를 만듭니다.
+
 ```
 kubectl create namespace gremlin
 ```
 
-Next, you will run the `helm` command to install the Gremlin client. In this command there are three placeholder variables that you will need to replace with real data. Replace `$GREMLIN_TEAM_ID` with your Team ID, and replace `$GREMLIN_TEAM_SECRET` with your Secret Key as well. You also want to replace `$GREMLIN_CLUSTER_ID` with any unique name for your cluster.
+다음으로 `helm` 명령을 실행하여 Gremlin 클라이언트를 설치합니다. 이 명령에는 실제 데이터로 대체해야 하는 세 개의 자리 표시자 변수가 있습니다. `$GREMLIN_TEAM_ID`를 팀 ID로 바꾸고`$GREMLIN_TEAM_SECRET`도 보안 키로 바꿉니다. 또한`$ REMLIN_CLUSTER_ID`를 클러스터의 고유한 이름으로 바꾸려고 합니다.
+
 ```
     helm install gremlin gremlin/gremlin \
     --namespace gremlin \
@@ -34,12 +36,12 @@ Next, you will run the `helm` command to install the Gremlin client. In this com
     --set gremlin.secret.clusterID=$GREMLIN_CLUSTER_ID \
     --set gremlin.secret.teamSecret=$GREMLIN_TEAM_SECRET
 ```
-Let's go back to the Gremlin UI to find our `$GREMLIN_TEAM_ID` and `$GREMLIN_TEAM_SECRET`. 
+Gremlin UI로 돌아가 `$GREMLIN_TEAM_ID` 및 `$GREMLIN_TEAM_SECRET` 를 찾아 보겠습니다.
 
 ![Gremlin Navigation to Configuration](/images/gremlin/gremlin_config.png)
 
-Go ahead and copy your **Team ID**, and press **“Reset”** in **Secret Key.** Make sure to copy the Key. 
+**Team ID**를 복사하고 **Secret Key** 에서 **“Reset”**을 누릅니다. Key를 복사해야 합니다.
 
-Congrats! 🎉 You've deployed Gremlin to your cluster. Head over to https://app.gremlin.com/clients/infrastructure to verify your installation on the Gremlin UI. 
+축하합니다! 🎉 Gremlin을 클러스터에 배포했습니다. https://app.gremlin.com/clients/infrastructure로 이동하여 Gremlin UI에서 설치를 확인하십시오.
 
 ![Gremlin Clients View](/images/gremlin/gremlin_ui_clients.png)

@@ -1,25 +1,26 @@
 +++
-title = "1.4 Install helm"
+title = "1.4 helm 설치"
 chapter = false
 weight = 25
 
 +++
 
-[Helm](https://helm.sh/) describes itself as a 'package manager for kubernetes' and can be used to deploy resources to Kubernetes.
+[Helm](https://helm.sh/)은 스스로를 'kubernetes 용 패키지 관리자'라고 설명하며 Kubernetes에 리소스를 배포하는데 사용할 수 있습니다.
 
-You package your application as a **chart** which can contain templated files (usually Kubernetes resources) and default configuration **values** too use when rendering the template. Charts are reusable and values can be overriden for specific environments.
+애플리케이션을 템플릿 파일(일반적으로 Kubernetes 리소스)을 포함 할 수있는 **chart**로 패키징하고 템플릿을 렌더링 할 때 기본 구성 **values**도 사용합니다. 차트는 재사용 가능하며 특정 환경에 대해 값을 재정의 할 수 있습니다.
+
 
 {{% notice tip %}}
-We are using Helm v3 in the workshops. So there is no `tiller`. If you are using your own environment and not the workshops **Cloud9** environment and you have Helm v2 the commands should work ok.
+워크샵에서 Helm v3를 사용하고 있습니다. 그래서 `tiller`는 없습니다. 워크숍 **Cloud9** 환경이 아닌 자체 환경을 사용하고 Helm v2가있는 경우 명령이 정상적으로 작동합니다.
 {{% /notice %}}
 
-At the terminal command prompt, enter the following command to download Helm:
+터미널 명령 프롬프트에서 다음 명령을 입력하여 Helm을 다운로드 합니다.
 
 ```bash
 curl -L https://get.helm.sh/helm-v3.1.2-linux-amd64.tar.gz -o helm.tar.gz
 ```
 
-We then want to extract helm, make it executable and copy to a location in the path:
+그런 다음 helm을 추출하고 실행 가능하게 만들고 경로의 위치에 복사하려고 합니다.
 
 ```bash
 tar xvfz helm.tar.gz linux-amd64/helm
@@ -27,15 +28,15 @@ chmod +x ./linux-amd64/helm
 sudo mv ./linux-amd64/helm /usr/local/bin
 ```
 
-This will install `helm` in your **EKS Cluster**. To test to make sure the command is installed properly, execute the command:
+**EKS 클러스터**에 `helm` 이 설치됩니다. 명령이 제대로 설치되었는지 테스트하려면 다음 명령을 실행하십시오.
 
 ```bash
 helm version
 ```
 
-You should see the `helm` version message.
+`helm` 버전 메시지가 표시되어야 합니다.
 
-Before we leave we should tidy up by executing these commands:
+떠나기 전에 다음 명령을 실행하여 정리해야 합니다.
 
 ```bash
 rm -rf ./linux-amd64

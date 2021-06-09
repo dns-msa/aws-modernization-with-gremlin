@@ -1,12 +1,12 @@
 +++
-title = "1.3 Test your sock shop"
+title = "1.3 sock shop 테스트"
 chapter = true
 weight = 22
 +++
 
-# Test Your Sock Shop
+# Sock Shop 테스트
 
-In order to test that our sock-shop has been deployed, we are going to grab the load balancer DNS name and test it in our own browser. Look for the steps for your corresponding setup:
+Sock-shop 배포되었는지 테스트하기 위해 로드 밸런서 DNS 이름을 가져와서 자체 브라우저에서 테스트 할 것입니다. 해당 설정에 대한 단계를 확인하세요.
 
 - [New EC2 Experience](#if-you-are-using-the-new-ec2-experience-follow-this)
 - [Older EC2 Experience](#if-you-are-using-the-older-ec2-experience-follow-this) 
@@ -15,79 +15,80 @@ In order to test that our sock-shop has been deployed, we are going to grab the 
 
 
 
-#### If you are using the **New EC2 Experience** follow this: 
+#### **New EC2 Experience**을 사용하는 경우 다음을 따르십시오.
 
-**If you are running this in an AWS event,** visit the [EC2 Console](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Home:) and log in to your bastion host EC2 instance. The name of your bastion host will end in **-bastion.** (Example: **mod-f679f4081e7d405c-bastion**). 
+
+**AWS 이벤트에서 실행중인 경우** [EC2 콘솔](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Home:)을 방문하십시오. 배스천 호스트 EC2 인스턴스에 로그인합니다. 배스천 호스트의 이름은 **-bastion.**로 끝납니다 (예 : **mod-f679f4081e7d405c-bastion**).
 ![Bastion-ec2](/images/ec2_connect.png)
 
-Locate your bastion host and using the "Actions" dropdown select "Connect" and then select **EC2 Instance Connect**. 
+배스천 호스트를 찾고 "Actions" 드롭 다운을 사용하여 "Connect"을 선택한 다음 **EC2 Instance Connect**을 선택합니다.
 
-On the next page, go ahead and change the username from **root** to `ec2-user` and press **Connect**. A new browser tab will open. 
+다음 페이지에서 사용자 이름을 **root**에서 `ec2-user`로 변경하고 **Connect**를 누릅니다. 새 브라우저 탭이 열립니다.
 
 ![ec2-change-username](/images/ec2_change_user.png)
 
 {{% notice tip %}}
-Leave the AWS EC2 Console tab open, we will use it again
+AWS EC2 콘솔 탭을 열어 둡니다. 다시 사용하겠습니다.
 {{% /notice %}}
 
-Run the following command in the console window to grab the load balancer IP:
+콘솔 창에서 다음 명령을 실행하여 로드 밸런서 IP를 가져옵니다.
 
 ```
 kubectl get svc -o wide -n sock-shop | grep LoadBalancer
 ```
 
-Copy the load balancer DNS name from the terminal and paste it. 
+터미널에서 로드 밸런서 DNS 이름을 복사하여 붙여 넣습니다.
 
 ![Bastion-lb](/images/LB-IP.png)
 
-Paste it into your web browser, and you should be good to go.
+웹 브라우저에 붙여넣기만 하면 됩니다.
 
 ![Bastion-sock](/images/Browser-Sock.png)
 
 {{% notice tip %}}
-Also keep the sock shop browser tab open for the rest of today's activities. 
+또한 오늘의 나머지 활동을 위해 sock shop 브라우저 탭을 열어 두십시오.
 {{% /notice %}}
 
-#### If you are using the **Older EC2 Experience** follow this: 
+#### 이전 **EC2 Experience** 을 사용하는 경우 다음을 따르십시오.
 
 ![AWS - EC2 - Old Experience ](/images/aws_ec2_connect_1.png)
 
-**If you are running this in an AWS event,** visit the [EC2 Console](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Home:) and log in to your bastion host EC2 instance. The name of your bastion host will end in **-bastion.** (Example: **mod-f679f4081e7d405c-bastion**). Locate your bastion host and press **"Connect"**, a pop up screen will display as seen below:
+**AWS 이벤트에서 실행중인 경우** [EC2 콘솔](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Home:)을 방문하십시오. 배스천 호스트 EC2 인스턴스에 로그인합니다. 배스천 호스트의 이름은 **-bastion.**로 끝납니다 (예 : **mod-f679f4081e7d405c-bastion**). 배스천 호스트를 찾아 **"Connect"**을 누르면 아래와 같은 팝업 화면이 표시됩니다.
 
 ![AWS - EC2 - Old Experience ](/images/aws_ec2_connect_2.png)
 
-In the pop up select **EC2 Instance Connect** and a new browser window will open. 
+팝업에서 **EC2 Instance Connect**를 선택하면 새 브라우저 창이 열립니다.
 
 {{% notice tip %}}
-Keep this browser window open for the rest of today's activities. 
+오늘의 나머지 활동을 위해 이 브라우저 창을 열어 두십시오.
 {{% /notice %}}
 
-Run the following command in the console window to grab the load balancer IP:
+콘솔 창에서 다음 명령을 실행하여 로드 밸런서 IP를 가져옵니다.
 
 ```
 kubectl get svc -o wide -n sock-shop | grep LoadBalancer
 ```
 
-Copy the load balancer DNS name from the terminal and paste it. 
+터미널에서 로드 밸런서 DNS 이름을 복사하여 붙여 넣습니다.
 
 ![Bastion-lb](/images/LB-IP.png)
 
-Paste it into your web browser, and you should be good to go.
+웹 브라우저에 붙여넣기만 하면 됩니다.
 
 ![Bastion-sock](/images/Browser-Sock.png)
 
 {{% notice tip %}}
-Also keep the sock shop browser tab open for the rest of today's activities. 
+또한 오늘의 나머지 활동을 위해 sock shop 브라우저 탭을 열어 두십시오.
 {{% /notice %}}
 
-#### If you are running this workshop on your own, follow this: 
-Run the following command in your cloud9 terminal in order to grab the load balancer DNS name:
+#### 이 workshop을 직접 실행하는 경우 다음을 따르십시오.
+로드 밸러서 DNS 이름을 가져 오려면 cloud9 터미널에서 다음 명령을 실행합니다.
 
 ```
 kubectl get svc -o wide -n sock-shop | grep LoadBalancer
 ```
-Paste it into your web browser, and you should be good to go.
+웹 브라우저에 붙여넣기만 하면 됩니다.
 
 {{% notice tip %}}
-Keep this browser tab open for the rest of today's activities. 
+오늘의 나머지 활동을 위해 이 브라우저 탭을 열어 두십시오.
 {{% /notice %}}

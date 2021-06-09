@@ -1,24 +1,25 @@
 +++
-title = "Part 1: Setup"
+title = "Part 1: 설정"
 chapter = true
 weight = 22
 +++
 
 #### Shop Sock
 
-For our labs, we picked up the Sock Shop application. [Sock Shop](https://github.com/microservices-demo/microservices-demo) is a microservice sample application that [Weaveworks](https://weave.works) initially developed for demoing and testing purposes. They made it open source so it can be used by  other organizations for learning and demonstration purposes. 
+
+우리 연구실에서는 Sock Shop 애플리케이션을 선택했습니다. [Sock Shop](https://github.com/microservices-demo/microservices-demo)은 [Weaveworks](https://weave.works)가 데모 및 테스트 목적으로 처음 개발한 마이크로 서비스 샘플 애플리케이션 입니다. 그들은 그것을 오픈 소스로 만들어 다른 조직에서 학습 및 데모 목적으로 사용할 수 있도록 했습니다.
 
 ![sockshop](https://github.com/microservices-demo/microservices-demo.github.io/raw/master/assets/sockshop-frontend.png)
 
-### Shop Sock Architecture
+### Shop Sock 아키텍처
 
-The architecture of the demo microserivces application was intentionally designed to provide as many microservices as possible. Please don't use the Sock Shop application as a model for a well architected micro-services application, it was built for demonstration purposes. If you are just beginning to architect your own micro-services based cloud native application, [Weaveworks](https://www.weave.works/contact/) would be happy to help recommend the correct architecture for your use case.
+데모 마이크로 서비스 애플리케이션의 아키텍처는 가능한 한 많은 마이크로 서비스를 제공하도록 의도적으로 설계되었습니다. Sock Shop 애플리케이션을 잘 설계된 마이크로 서비스 애플리케이션의 모델로 사용하지 마십시오. 데모 용으로 구축되었습니다. 자신만의 마이크로 서비스 기반 클라우드 네이티브 애플리케이션 설계를 막 시작한 경우 [Weaveworks](https://www.weave.works/contact/)에서 사용 사례에 맞는 올바른 아키텍처를 추천해드립니다.
 
-Furthermore, Sock Shop is intentionally uses a number of different languages and technologies in order to demonstrate how Kubernetes works for a number of different technologies. Again, we'd recommend that you only consider new technologies based upon a need.
+또한 Sock Shop은 Kubernetes가 다양한 기술에서 작동하는 방식을 보여주기 위해 의도적으로 다양한 언어와 기술을 사용합니다. 다시 말하지만, 필요에 따라 새로운 기술만 고려하는 것이 좋습니다.
 
-As seen in the image above, the microservices are roughly defined by the functions of an e-commerce site. Networks are specified, but due to technology limitations may not be implemented in some deployments.
+위 이미지에서 볼 수 있듯이 마이크로 서비스는 전자 상거래 사이트의 기능에 의해 대략적으로 정의됩니다. 네트워크가 지정되었지만 기술 제한으로 인해 일부 배포에서는 구현되지 않을 수 있습니다.
 
-All services communicate using REST over HTTP. This was chosen due to the simplicity of development and testing. Their API specifications are under development.
+모든 서비스는 HTTP를 통해 REST를 사용하여 통신합니다. 이것은 개발 및 테스트의 단순성 때문에 선택되었습니다. API 사양은 개발 중입니다.
 
 ![sockshop-topology](/images/sockshop-topology.png)
 

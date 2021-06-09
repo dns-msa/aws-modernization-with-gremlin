@@ -1,5 +1,5 @@
 +++
-title = "1.2 Deploy the SockShop"
+title = "1.2 SockShop 배포"
 chapter = false
 weight = 02
 
@@ -7,48 +7,50 @@ weight = 02
 
 
 
- In the case you need to grab the `kubeconfig` from AWS. You can do that by first looking for the name of the cluster using `eksctl`:
+ AWS에서 `kubeconfig` 를 가져와야하는 경우. 먼저 `eksctl` 을 사용하여 클러스터 이름을 검색하면 됩니다.
 ```
 eksctl get clusters
 ```
 
-And then grabbing the `kubeconfig` from AWS.
+그런 다음 AWS에서 `kubeconfig` 를 가져옵니다.
 ```
  aws eks --region us-west-2  update-kubeconfig --name sockshop-eks-cluster
 ```
 
-You should now be able to view your cluster with `kubectl`
+이제 `kubectl` 을 사용하여 클러스터를 볼 수 있습니다.
 
 ```
 kubectl get nodes
 ```
 
-Now, you can deploy your sock shop
+이제 sock shop를 배치 할 수 있습니다.
 
-First clone the repo below and and go into the `deploy/kubernetes` folder.
+먼저 아래의 저장소를 복제하고 `deploy / kubernetes` 폴더로 이동합니다.
 
 ```
 git clone https://github.com/dns-msa/microservices-demo
 ```
-Create the namespace
+
+네임 스페이스 만듭니다.
 
 ```
 kubectl create namespace sock-shop
 ```
-Deploy the application
+
+애플리케이션 배포합니다.
 
 ```
 kubectl apply -f complete-demo.yaml
 ```
 
-Deploy the `front-end-svc` load balancer. (refer to `deploy/kubernetes/manifests`)
+`front-end-svc` 로드 밸런서를 배포합니다. (`deploy/kubernetes/manifests` 참조)
 
 ```
 kubectl apply -f manifests/front-end-svc.yaml
 ```
 
 
-🎉 Congrats, you've deployed the demo application on your cluster.
+🎉 축하합니다. 클러스터에 데모 애플리케이션을 배포했습니다.
 
 
 
