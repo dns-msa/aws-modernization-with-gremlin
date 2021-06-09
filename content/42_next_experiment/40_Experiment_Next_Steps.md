@@ -1,36 +1,36 @@
 +++
-title = "3.4 Experiment Next Steps"
+title = "3.4 다음 단계 실험"
 chapter = true
 weight = 30
 +++
 
-# 3.4 Experiment Next Steps
-### Do you see anything? 
-Maybe when you ran your experiment you realized that you completely broke your application.
+# 3.4 다음 단계 실험
+### 뭐가 보이나요?
+실험을 실행했을 때 애플리케이션이 완전히 망가졌다는 것을 깨달았을 수도 있습니다.
 
 ![Sock Shop Results](/images/blackhole_results1.png)
 ![Sock Shop Results](/images/blackhole_results2.png)
 
-**Is this acceptable for your customers?**
+**고객에게 허용됩니까?**
 
-> No
+> 아니요
 
-Did you press the halt button?
+중지 버튼을 눌렀습니까?
 
 ![Gremlin UI - Halt](/images/gremlin_ui_halt_explanation.png)
 
 
 
-**Was this expected?**
+  **예상된 것인가요?**
 
- No? Great, you’ve found a weakness before it became an outage!
- Chaos Engineering uncovers unknown side effects.
+  아니요? 좋습니다. 중단되기 전에 약점을 발견하셨습니다.
+  카오스 엔지니어링은 알려지지 않은 부작용을 발견합니다.
 
- **Was this detected?**
+  **감지 되었습니까?**
 
- No? Awesome, there’s a great opportunity to improve monitoring and bring down that MTTD.
- Ensuring that our monitoring is configured correctly is critical.
+  아니요? 훌륭합니다. 모니터링을 개선하고 MTTD를 중단 할 수있는 좋은 기회가 있습니다.
+  모니터링이 올바르게 구성되었는지 확인하는 것이 중요합니다.
 
- **Was it mitigated?**
+  **완화 되었습니까?**
 
- It sure feels a lot more comfortable working on resolving an issue knowing that your users can still access your service! When possible our systems should gracefully degrade.
+  사용자가 여전히 서비스에 액세스 할 수 있다는 사실을 알기 때문에 문제를 해결하는 것이 훨씬 더 편안해집니다! 가능하면 시스템이 정상적으로 저하되어야 합니다.

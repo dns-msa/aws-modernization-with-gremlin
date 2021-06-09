@@ -1,17 +1,17 @@
 +++
-title = "3.1 Define Steady State"
+title = "3.1 정상 상태 정의"
 chapter = true
 weight = 10
 +++
 
-# 3.1 Define Steady State
-## Defining Steady State
+# 3.1 정상 상태 정의
+## 정상 상태 정의
 
-Before we begin injecting failure failure again,  head back to your Sock Shop and review the steady state of your application. This includes validating the user experience and revising your dashboard and metrics to understand your systems are operating under normal conditions. 
+실패 실패를 다시 주입하기 전에 Sock Shop으로 돌아가서 애플리케이션의 안정 상태를 확인하십시오. 여기에는 사용자 경험의 유효성을 검사하고 시스템이 정상적인 조건에서 작동하는지 이해하기 위한 대시보드 및 메트릭 수정이 포함됩니다.
 
-Things to try out:
+시도 할 사항 :
 
-+ Add to Cart
-+ Remove from Cart
-+ Checkout 
-+ Add items to Cart and leave them there
++ 장바구니에 추가
++ 장바구니에서 제거
++ 체크 아웃
++ 장바구니에 항목을 추가하고 그대로 두십시오.

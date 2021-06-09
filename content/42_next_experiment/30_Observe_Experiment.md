@@ -1,16 +1,15 @@
 +++
-title = "3.3 Observe Experiments"
+title = "3.3 실험 관찰"
 chapter = true
 weight = 30
 +++
 
-# Observe Experiment
-Now that you kicked off the attack, switch back to Container Insights and your CloudWatch to observe the chaos. 
-##### Do you see anything? 
+# 실험 관찰
+이제 공격을 시작 했으므로 Container Insights와 CloudWatch로 다시 전환하여 카오스를 관찰하십시오.
+##### 아무것도 안 보이시나요?
 
-Go ahead and browse your Sock Shop website.
-##### How is the user experience of the application?
-##### Is your hypothesis correct? 
-##### Does your UI handle this failure in an acceptable manner for your customers?
-##### Did you run across any abort conditions? 
-
+계속해서 Sock Shop 웹 사이트를 검색하십시오.
+##### 애플리케이션의 사용자 경험은 어떻습니까?
+##### 가설이 맞습니까?
+##### UI가 고객에게 허용 가능한 방식으로 이 오류를 처리합니까?
+##### 중단 조건을 만났습니까?
