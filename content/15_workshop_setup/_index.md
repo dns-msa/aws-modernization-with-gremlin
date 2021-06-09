@@ -1,19 +1,19 @@
 +++
-title = "Workshop Setup"
+title = "Workshop 설정"
 chapter = true
 weight = 10
 +++
 
-# Workshop Setup
+# Workshop 설정
 
 
 
-* AWS console
-* CLoud9 IDE Environment
+* AWS 콘솔
+* CLoud9 IDE 환경
 
 
-## Objectives of this section
+## 이 섹션의 목표
 
-:small_blue_diamond: Provision AWS Cloud9 IDE environment
+:small_blue_diamond: AWS Cloud9 IDE 환경 프로비저닝
 
-:small_blue_diamond: Run setup scripts to optimize your environment 
+:small_blue_diamond: 환경 최적화를 위한 설정 스크립트 실행
