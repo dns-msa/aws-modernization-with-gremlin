@@ -1,42 +1,36 @@
 ---
-title: "Create a workspace"
+title: "작업 공간 만들기"
 chapter: false
 weight: 12
 ---
 
 {{% notice warning %}}
-The Cloud9 workspace should be built by an IAM user with Administrator privileges,
-not the root account user. Please ensure you are logged in as an IAM user, not the root
-account user.
+Cloud9 작업 영역은 루트 계정 사용자가 아닌 관리자 권한이 있는 IAM 사용자가 구축해야 합니다. 루트 계정 사용자가 아닌 IAM 사용자로 로그인했는지 확인하십시오.
 {{% /notice %}}
 
 {{% notice info %}}
-This workshop was designed to run in the **Oregon (us-west-2)** region. **Please don't
-run in any other region.** Future versions of this workshop will expand region availability,
-and this message will be removed.
+이 워크샵은 **Oregon (us-west-2)** 지역에서 실행되도록 설계되었습니다. **다른 지역에서는 실행하지 마십시오.**이 워크숍의 향후 버전에서는 지역 가용성이 확대되며 이 메시지는 제거됩니다.
 {{% /notice %}}
 
 {{% notice tip %}}
-Ad blockers, javascript disablers, and tracking blockers should be disabled for
-the cloud9 domain, or connecting to the workspace might be impacted.
-Cloud9 requires third-party-cookies. You can whitelist the [specific domains]( https://docs.aws.amazon.com/cloud9/latest/user-guide/troubleshooting.html#troubleshooting-env-loading).
+cloud9 도메인에 대해 광고 차단기, 자바 스크립트 비활성화기 및 추적 차단기를 비활성화 해야합니다. 그렇지 않으면 작업 영역에 대한 연결이 영향을 받을 수 있습니다.
+Cloud9에는 타사 쿠키가 필요합니다. [특정 도메인](https://docs.aws.amazon.com/cloud9/latest/user-guide/troubleshooting.html#troubleshooting-env-loading)을 화이트리스트에 추가 할 수 있습니다.
 {{% /notice %}}
 
-### Launch Cloud9:
-Create a Cloud9 Environment: [https://us-west-2.console.aws.amazon.com/cloud9/home?region=us-west-2](https://us-west-2.console.aws.amazon.com/cloud9/home?region=us-west-2)
+### Cloud9 시작:
+Cloud9 환경을 만듭니다. [https://us-west-2.console.aws.amazon.com/cloud9/home?region=us-west-2](https://us-west-2.console.aws.amazon.com/cloud9/home?region=us-west-2)
 
 {{% notice warning %}}
-Make sure you are naming your Cloud9 environment `Gremlin-Workshop`, otherwise things will break later.
+Cloud9 환경의 이름을 'Gremlin-Workshop'으로 지정해야 합니다. 그렇지 않으면 나중에 문제가 발생합니다.
 {{% /notice %}}
 
-- Select **Create environment**
-- Name it **Gremlin-Workshop**, and take all other defaults
-- When it comes up, customize the environment by closing the **welcome tab**
-and **lower work area**, and opening a new **terminal** tab in the main work area:
+- **Create environment**를 선택합니다.
+- 이름을 **Gremlin-Workshop**으로 지정하고 다른 모든 기본값을 사용합니다.
+- Cloud9이 시작되면 **welcome tab** 및 **lower work area** 을 닫고 기본 작업 영역에서 새 **terminal** 탭을 열어 환경을 사용자 지정합니다.
 ![c9before](/images/c9before.png)
 
-- Your workspace should now look like this:
+- 이제 작업 공간이 다음과 같아야합니다.
 ![c9after](/images/c9after.png)
 
-- If you like this theme, you can choose it yourself by selecting **View / Themes / Solarized / Solarized Dark**
-in the Cloud9 workspace menu.
+- 이 테마가 마음에 들면, Cloud9 작업 영역 메뉴에서 **View / Themes / Solarized / Solarized Dark**를 선택하여 직접 선택할 수 있습니다.
+
