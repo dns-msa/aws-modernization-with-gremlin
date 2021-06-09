@@ -1,5 +1,5 @@
 ---
-title: "직접 실행"
+title: "자체 계정 실행"
 chapter: true
 weight: 11
 ---

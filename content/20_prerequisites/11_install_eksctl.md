@@ -1,13 +1,13 @@
 +++
-title = "Install eksctl"
+title = "eksctl 설치"
 chapter = false
 weight = 11
 
 +++
 
-For this workshop you will use a [eksctl](https://eksctl.io/introduction/#installation). Once you install eksctl, you will be ready to get started.
+이 workshop에서는 [eksctl](https://eksctl.io/introduction/#installation)을 사용합니다. eksctl을 설치하면 시작할 준비가 된 것입니다.
 
-At the terminal command prompt, enter the following two commands:
+터미널 명령 프롬프트에서 다음 두 명령을 입력합니다.
 
 ```
 curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
@@ -17,16 +17,17 @@ curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/d
 sudo mv /tmp/eksctl /usr/local/bin
 ```
 
-This will install `eksctl` in your **Cloud9** environment. To test to make sure the command is installed properly, execute the command:
+**Cloud9** 환경에 `eksctl` 이 설치됩니다. 명령이 제대로 설치되었는지 테스트하려면 다음 명령을 실행하십시오.
+
 
 ```
 eksctl get cluster
 ```
 
-You should get a "No clusters found" message.
+"No clusters found" 메시지가 표시되어야 합니다.
 
 ```
 eksctl version
 ```
 
-For the current workshops, we will be using `eksctl` **0.19-rc.1** or newer. Please verify the version, as some features are only available in the **0.19** version of `eksctl`
+현재 workshops에서는 `eksctl` **0.19-rc.1** 이상을 사용합니다. 일부 기능은 `eksctl` 의 **0.19** 버전에서만 사용할 수 있으므로 버전을 확인하세요.

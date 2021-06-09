@@ -1,22 +1,22 @@
 +++
-title = "Install fluxctl"
+title = "fluxctl 설치"
 chapter = false
 weight = 14
 
 +++
 
-## Install Fluxctl
+## Fluxctl 설치
 
-[Fluxctl](https://docs.fluxcd.io/en/1.17.1/references/fluxctl.html) is a CLI tool that is able to talk to [Weave Flux](https://github.com/fluxcd/flux).
+[Fluxctl](https://docs.fluxcd.io/en/1.17.1/references/fluxctl.html)은 [Weave Flux](https://github.com/fluxcd/flux)와 통신 할 수있는 CLI 도구입니다.
 
-Install by running this command:
+다음 명령을 실행하여 설치하십시오.
 
 ```sh
 curl -Ls https://fluxcd.io/install | sh && \
 sudo mv $HOME/.fluxcd/bin/fluxctl /usr/local/bin/fluxctl
 ```
 
-Verify the installation:
+설치를 확인하십시오.
 
 ```sh
 fluxctl version
