@@ -27,7 +27,7 @@ We are going to need to setup a CloudWatch Alarm, go ahead and select **"Create 
 
 **"Policy type"**에서 **"Simple scaling"**을 선택합니다.
 
-Scaling Policy 이름은 **`ScaleUp`**이라고 부릅니다.
+Scaling Policy 이름은 **`ScaleUp`**이라고 합니다.
 
 ![AWS Auto Scaling Groups](/images/aws_create_scaling_policy_prework.png)
 
