@@ -7,11 +7,11 @@ weight = 01
 # eksctl 클러스터 생성 
 
 
-[eksctl](https://eksctl.io/introduction/)을 사용하면 EKS에서 Kubernetes 클러스터를 간편하게 프로비저닝 할 수 있습니다. 이 워크숍에서는 기본 3 노드 EKS 클러스터를 생성합니다. `eksctl` 을 사용하면 단일 명령줄입니다.
+[eksctl](https://eksctl.io/introduction/)을 사용하면 EKS에서 Kubernetes 클러스터를 간편하게 프로비저닝 할 수 있습니다. 이 워크숍에서는 기본 2 노드 EKS 클러스터를 생성합니다. `eksctl` 을 사용하면 단일 명령줄입니다.
 
 
 ```
-eksctl create cluster --name sockshop-eks-cluster --version 1.15 --region us-west-2 --nodegroup-name standard-workers --node-type t3.medium --nodes 3 --nodes-min 1 --nodes-max 4
+eksctl create cluster --name sockshop-eks-cluster --version 1.20 --region us-west-2 --nodegroup-name standard-workers --node-type t3.medium --nodes 2 --nodes-min 1 --nodes-max 3
 ```
 
 `kubeconfig` 메시지로 끝나는 여러 메시지가 스크롤되는 것을 볼 수 있습니다.
