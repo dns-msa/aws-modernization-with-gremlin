@@ -1,5 +1,5 @@
 ﻿---
-title: "작업 공간에 대한 IAM 설정 업데이트"
+title: "작업 환경에 대한 IAM 설정 업데이트"
 chapter: false
 weight: 19
 ---
