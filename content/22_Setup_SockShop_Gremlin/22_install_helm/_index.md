@@ -17,7 +17,7 @@ weight = 25
 터미널 명령 프롬프트에서 다음 명령을 입력하여 Helm을 다운로드 합니다.
 
 ```bash
-curl -L https://get.helm.sh/helm-v3.1.2-linux-amd64.tar.gz -o helm.tar.gz
+curl -L https://get.helm.sh/helm-v3.6.0-linux-amd64.tar.gz -o helm.tar.gz
 ```
 
 그런 다음 helm을 추출하고 실행 가능하게 만들고 경로의 위치에 복사하려고 합니다.
