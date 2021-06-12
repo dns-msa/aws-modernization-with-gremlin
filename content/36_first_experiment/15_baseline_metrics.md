@@ -8,7 +8,7 @@ weight =  15
 
 이 workshop을 진행하면서 실험 결과를 항상 응용 프로그램의 정상 상태와 비교하려고 합니다.
 
-[Container Insights](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#container-insights:performance) 브라우저 탭으로 이동하여 생성한 측정치를 확인하겠습니다.
+[Container Insights](https://console.aws.amazon.com/cloudwatch/home?region=us-west-2#container-insights:performance) 브라우저 탭으로 이동하여 생성한 측정치를 확인하겠습니다.
 
 여기에서 다양한 보기를 선택할 수 있습니다. 최근 수집된 통찰력을 확대 할 수 있도록 타임 라인을 단 30 분의 사용자 지정 시간 범위로 좁힐 것입니다.
 
