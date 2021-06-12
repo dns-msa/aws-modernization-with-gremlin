@@ -55,8 +55,8 @@ kubectl apply -f complete-demo.yaml
 kubectl apply -f manifests/front-end-svc.yaml
 ```
 
-`kubectl get svc -n sock-shop` 명령어를 실행하면  `font-end` 의 `LoadBalancer` 주소를 확인 할 수 있습니다.
- 
+`kubectl get svc front-end -n sock-shop` 명령어를 실행하면  `font-end` 의 `LoadBalancer` 주소를 확인 할 수 있고 `http`를 통해 80 포트로 접속할 수 있습니다.
+
 
 🎉 축하합니다. 클러스터에 데모 애플리케이션을 배포했습니다.
 
