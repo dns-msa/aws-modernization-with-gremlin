@@ -13,9 +13,9 @@ Linux 용 kustomize를 설치하십시오.
 
 ```sh
 curl --silent --location --remote-name \
-"https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/v3.2.3/kustomize_kustomize.v3.2.3_linux_amd64" && \
-chmod a+x kustomize_kustomize.v3.2.3_linux_amd64 && \
-sudo mv kustomize_kustomize.v3.2.3_linux_amd64 /usr/local/bin/kustomize
+"https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2Fv4.1.3/kustomize_v4.1.3_linux_amd64.tar.gz" && \
+tar xvzf kustomize_v4.1.3_linux_amd64.tar.gz && \
+sudo mv kustomize /usr/local/bin/kustomize
 ```
 
 설치를 확인하십시오.
