@@ -1,5 +1,5 @@
 ﻿---
-title: "작업 공간에 대한 IAM 설정 업데이트"
+title: "작업 환경에 대한 IAM 설정 업데이트"
 chapter: false
 weight: 19
 ---
@@ -9,7 +9,7 @@ Cloud9는 일반적으로 IAM 자격 증명을 동적으로 관리합니다.
 현재 EKS IAM 인증과 호환되지 않으므로 이를 비활성화하고 대신 IAM 역할에 의존합니다.
 {{% /notice %}}
 
-- 작업 공간으로 돌아가서 톱니 바퀴 아이콘(오른쪽 상단 모서리에 있음)을 클릭하거나 클릭하여 새 탭을 열고 "Open Preferences"를 선택합니다.
+- 작업 환경으로 돌아가서 톱니 바퀴 아이콘(오른쪽 상단 모서리에 있음)을 클릭하거나 클릭하여 새 탭을 열고 "Open Preferences"를 선택합니다.
 - **AWS SETTINGS**를 선택합니다.
 - **AWS managed temporary credentials** 끄기
 - 환경 설정 탭 닫기
