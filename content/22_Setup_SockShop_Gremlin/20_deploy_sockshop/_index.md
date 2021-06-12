@@ -25,13 +25,19 @@ kubectl get nodes
 
 이제 sock shop를 배치 할 수 있습니다.
 
-먼저 아래의 저장소를 복제하고 `deploy / kubernetes` 폴더로 이동합니다.
+먼저 아래의 저장소를 clone 합니다.
 
 ```
 git clone https://github.com/dns-msa/microservices-demo
 ```
 
-네임 스페이스 만듭니다.
+cd 명령어를 사용해 `complete-demo.yaml` 파일이 있는 위치로 이동합니다.
+
+```
+cd microservices-demo/deploy/kubernetes
+```
+
+애플리케이션을 배포하기 전에 네임 스페이스 만듭니다.
 
 ```
 kubectl create namespace sock-shop
@@ -49,6 +55,8 @@ kubectl apply -f complete-demo.yaml
 kubectl apply -f manifests/front-end-svc.yaml
 ```
 
+`kubectl get svc -n sock-shop` 명령어를 실행하면  `font-end` 의 `LoadBalancer` 주소를 확인 할 수 있습니다.
+ 
 
 🎉 축하합니다. 클러스터에 데모 애플리케이션을 배포했습니다.
 
