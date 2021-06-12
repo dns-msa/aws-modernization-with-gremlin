@@ -1,5 +1,5 @@
 ---
-title: "작업 공간 만들기"
+title: "작업 환경 만들기"
 chapter: false
 weight: 12
 ---

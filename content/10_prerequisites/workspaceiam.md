@@ -1,5 +1,5 @@
 ---
-title: "작업 공간에 IAM 역할 연결"
+title: "작업 환경에 IAM 역할 연결"
 chapter: false
 weight: 17
 ---
