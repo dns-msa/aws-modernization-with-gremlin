@@ -53,4 +53,5 @@ export GREMLIN_CLUSTER_ID=MY_GREMLIN
 
 축하합니다! 🎉 Gremlin을 클러스터에 배포했습니다. https://app.gremlin.com/clients/infrastructure로 이동하여 Gremlin UI에서 설치를 확인하십시오.
 
+실행중인 두개의 호스트에 대한 정보를 볼 수 있습니다.
 ![Gremlin Clients View](/images/gremlin/gremlin_ui_clients.png)

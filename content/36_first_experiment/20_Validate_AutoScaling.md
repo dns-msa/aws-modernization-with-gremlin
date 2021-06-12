@@ -20,11 +20,12 @@ weight = 20
 ## 실험 개시
 먼저 [Gremlin](https://app.gremlin.com)으로 돌아가 모든 호스트에 CPU 공격을 구성합니다.
 
-왼쪽 탐색 표시 줄에서 **"New Attacks"** 다음에 나오는 **"Attacks"**을 클릭합니다.
+웹 콘솔의 왼쪽 탐색 메뉴 표시 줄에서 **"Attacks"** 를 선택하면 다음에 나오는 **"New Attack"** 버튼을 클릭합니다.
 
 ![Gremlin UI New Attack](/images/gremlin/gremlin_ui_create_new_attack.png)
 
-**"What do you want to attack?"**에서 **Hosts**를 선택한 다음 세 개의 호스트를 선택합니다.
+**"What do you want to attack?"**에서 Services 옆에 있는 **Infrastructure**를 선택한 다음 두 개의 호스트를 선택합니다.
+
 
 ![Gremlin UI Select Hosts](/images/gremlin/gremlin_ui_select_hosts.png)
 
