@@ -15,20 +15,13 @@ weight = 01
 
 ![AWS Auto Scaling groups](/images/aws_automatic_scaling.png) 
 
-각 클러스터에는 자체 Auto Scaling 그룹이 있습니다. 계속해서 필요한 것을 확인하십시오. 다음 섹션에서 **Automatic scaling**을 선택한 다음 **Add Policy**를 선택합니다.
+각 클러스터에는 자체 Auto Scaling 그룹이 있습니다. 계속해서 필요한 것을 확인하십시오. 다음 섹션에서 **Automatic scaling**을 선택한 다음 **Create dynamic scaling polocy**를 선택합니다.
 
-For **"Policy type"** select **"Simple scaling"**
+**"Policy type"** 에는  **"Simple scaling"** 을 선택합니다.
 
-For Scaling Policy name, feel free to call it **`ScaleUp`**.
+**"Scaling Policy name"** 에는,  **`ScaleUp`** 을 입력합니다.
 
 ![AWS Auto Scaling groups](/images/aws_create_scaling_policy_prework.png) 
 
-We are going to need to setup a CloudWatch Alarm, go ahead and select **"Create a CloudWatch alarm"**.
+CloudWatch 알람을 설정하기 위해 **"Create a CloudWatch alarm"** 를 클릭합니다.
 
-**"Policy type"**에서 **"Simple scaling"**을 선택합니다.
-
-Scaling Policy 이름은 **`ScaleUp`**이라고 합니다.
-
-![AWS Auto Scaling Groups](/images/aws_create_scaling_policy_prework.png)
-
-CloudWatch 경보를 설정하고 **"Create a CloudWatch alarm"**를 선택합니다.
