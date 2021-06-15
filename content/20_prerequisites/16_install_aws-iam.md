@@ -7,6 +7,16 @@ weight = 16
 
 Amazon EKS는 IAM을 사용하여 Kubernetes용 AWS IAM 인증자를 통해 Kubernetes 클러스터에 인증을 제공합니다. Kubernetes용 AWS IAM 인증자를 설치하고 이를 인증에 사용하도록 kubectl 구성 파일을 수정하여 Amazon EKS와 함께 작동하도록 stock kubectl 클라이언트를 구성 할 수 있습니다.
 
+
+{{% notice tip %}}
+AWS CLI 버전 1.16.156 이상을 실행 중인 경우에는 authenticator를 설치할 필요가 없습니다. 대신 aws eks get-token 명령을 사용할 수 있습니다. 
+
+https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/install-aws-iam-authenticator.html
+
+{{% /notice %}}
+
+
+
 Cloud9에 aws-iam-authenticator를 설치하려면
 
 Amazon S3에서 Amazon EKS 판매 aws-iam-authenticator 바이너리를 다운로드 합니다.

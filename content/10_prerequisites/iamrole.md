@@ -1,5 +1,5 @@
 ---
-title: "작업 영역에 대한 IAM 역할 생성"
+title: "작업 환경에 대한 IAM 역할 생성"
 chapter: false
 weight: 13
 ---

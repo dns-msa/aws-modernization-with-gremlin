@@ -10,6 +10,11 @@ weight = 25
 
 터미널 명령 프롬프트에서 다음 명령을 입력하여 Container Inshight 설치를 위한 환경 변수를 가져옵니다.
 
+{{% notice tip %}}
+`jq` 명령어가 설치되어 있지 않은 경우 `sudo yum install jq` 를 실행하여 설치합니다.
+{{% /notice %}}
+
+
 ```bash
 STACK_NAME=$(eksctl get nodegroup --cluster sockshop-eks-cluster -o json | jq -r '.[].StackName')
 ROLE_NAME=$(aws cloudformation describe-stack-resources --stack-name $STACK_NAME | jq -r '.StackResources[] | select(.ResourceType=="AWS::IAM::Role") | .PhysicalResourceId')

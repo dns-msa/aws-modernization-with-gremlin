@@ -7,7 +7,7 @@ weight = 02
 # 2.5.2 CloudWatch 경보
 ## Auto Scaling 설정 : Cloudwatch 구성
 
-먼저 경보할 측정 항목을 찾아야 합니다. **"Select Metric"**, **"Container Insights"**, **"ClusterName, InstanceId, NodeName"**을 차례로 선택합니다. EC2 인스턴스에서 `node_cpu_utilization`을 찾아 **"Select Metric"**을 누릅니다.
+먼저 경보할 측정 항목을 찾아야 합니다. **"Select Metric"**, **"ContainerInsights"**, **"ClusterName, InstanceId, NodeName"**을 차례로 선택합니다. EC2 인스턴스에서 `node_cpu_utilization`을 찾아 **"Select Metric"**을 누릅니다.
 
 ![Container Insights Results](/images/aws_select_cpu_utilization.png)
 
@@ -29,6 +29,7 @@ weight = 02
 > **CPU가 50보다 크면 알람이 트리거됩니다.**
 
 이제 알람이 트리거 될 때 발생하는 작업을 구성해야 합니다.
+페이지 상단의 **Notification**" 하단의 **Add notification** 버튼을 누릅ㅂ니다.
 
 **"Alarm state trigger"**의 경우 **"In alarm"**으로 둡니다. 그 아래에서 **"Create new Topic"**을 선택합니다. 주제에 이름을 지정하고 `CPU_Increase`를 사용하겠습니다. 이제 알림을 받을 이메일을 주고 **Create topic**를 누릅니다.
 

@@ -42,19 +42,19 @@ weight: 10
 
 2 . **lower work area** 탭을 닫습니다.
 
-3 . 기본 작업 영역에서 새 **terminal** 탭을 엽니다.
+3 . 기본 작업 환경에서 새 **terminal** 탭을 엽니다.
 
 
 ![c9before](/images/c9before.png)
 
-이제 작업 공간이 다음과 같아야하며 왼쪽 **environment** 탭을 클릭하여 왼쪽 환경 탐색기를 숨길 수 있습니다.
+이제 작업 환경이 다음과 같아야하며 왼쪽 **environment** 탭을 클릭하여 왼쪽 환경 탐색기를 숨길 수 있습니다.
 
 ![c9after](/images/c9after.png)
 
 {{% notice tip %}}
-이 어두운 테마가 마음에 들지 않으면 **View / Themes** Cloud9 작업 영역 메뉴에서 변경할 수 있습니다.
+이 어두운 테마가 마음에 들지 않으면 **View / Themes** Cloud9 작업 환경 메뉴에서 변경할 수 있습니다.
 {{% /notice %}}
 
 {{% notice tip %}}
-Cloud9에는 타사 쿠키(third-party-cookies)가 필요합니다. [특정 도메인](https://docs.aws.amazon.com/cloud9/latest/user-guide/troubleshooting.html#troubleshooting-env-loading)을 화이트리스트에 추가 할 수 있습니다. 이에 문제가 있습니다. 광고 차단기, 자바 스크립트 비활성화기 및 추적 차단기는 cloud9 도메인에 대해 비활성화 해야합니다. 그렇지 않으면 작업 영역에 대한 연결이 영향을 받을 수 있습니다.
+Cloud9에는 타사 쿠키(third-party-cookies)가 필요합니다. [특정 도메인](https://docs.aws.amazon.com/cloud9/latest/user-guide/troubleshooting.html#troubleshooting-env-loading)을 화이트리스트에 추가 할 수 있습니다. 이에 문제가 있습니다. 광고 차단기, 자바 스크립트 비활성화기 및 추적 차단기는 cloud9 도메인에 대해 비활성화 해야합니다. 그렇지 않으면 작업 환경에 대한 연결이 영향을 받을 수 있습니다.
 {{% /notice %}}

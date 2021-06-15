@@ -5,12 +5,12 @@ draft: false
 weight: 50
 ---
 ![image](/images/gremlin_mascot.png)
-많은 Gremlin 고객이 Chaos Engineering 채택에 성공한 것을 보았습니다.
+많은 Gremlin 고객들이 Chaos Engineering 도입에 성공한 것을 보았습니다.
 
 
 + [Backcountry](https://www.gremlin.com/customers/backcountry/)
     - 사고 감소 : 카오스 엔지니어링을 시작한 후 블랙 프라이데이 동안 사고 제로.
-    - MTTD가 전년의 여러 시간 MTTD에서 5 분으로 감소
+    - MTTD가 이전 연도에 비해서 수 시간에서 MTTD에서 5 분으로 감소
 
 + [Qualtrics](https://www.gremlin.com/customers/qualtrics/)
     - Chaos Engineering을 사용한 종속성 테스트로 500 시간 이상의 엔지니어링 시간 절약

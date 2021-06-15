@@ -6,7 +6,7 @@ weight = 30
 # 2.4 실험 관찰
 ## 실험 관찰
 
-이제 공격을 시작했으므로 [Container Insights](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#container-insights:performance)로 다시 전환하여 카오스를 관찰합니다. 방금 시작한 실험에서 CPU 사용률이 급증한 것을 확인할 수 있도록 사용자 지정 시간 프레임으로 자유롭게 변경하십시오.
+이제 공격을 시작했으므로 [Container Insights](https://console.aws.amazon.com/cloudwatch/home?region=us-west-2#container-insights:performance)로 다시 전환하여 카오스를 관찰합니다. 방금 시작한 실험에서 CPU 사용률이 급증한 것을 확인할 수 있도록 사용자 지정 시간 프레임으로 자유롭게 변경하십시오.
 
 ##### 가설이 맞습니까?
 ##### CPU가 증가 했습니까?
