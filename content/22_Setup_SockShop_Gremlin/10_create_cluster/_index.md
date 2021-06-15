@@ -11,7 +11,11 @@ weight = 01
 
 
 ```
-eksctl create cluster --name sockshop-eks-cluster --version 1.20 --region us-west-2 --nodegroup-name standard-workers --node-type t3.medium --nodes 2 --nodes-min 1 --nodes-max 3
+eksctl create cluster --name sockshop-eks-cluster \
+  --version 1.20 --region $AWS_REGION \
+  --nodegroup-name standard-workers --node-type t3.medium \
+  --nodes 2 --nodes-min 1 --nodes-max 3 \
+  --enable-ssm
 ```
 
 `kubeconfig` 메시지로 끝나는 여러 메시지가 스크롤되는 것을 볼 수 있습니다.
