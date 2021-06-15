@@ -10,8 +10,13 @@ In order to prevent charges to your account we recommend cleaning up the infrast
 
 
 ```bash
-# Delete CloudFormation Stacks
-aws cloudformation delete-stack --stack-name mod-f679f4081e7d405c
+# Detach IAM policy for CloudWatch ContainerInsights
+aws iam detach-role-policy \
+  --role-name $ROLE_NAME \
+  --policy-arn arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy
+
+# Delete EKS cluster
+eksctl delete cluster --name sockshop-eks-cluster --region $AWS_REGION
 
 echo 'Completed cleanup..'
 ```
