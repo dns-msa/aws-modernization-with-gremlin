@@ -13,7 +13,7 @@ weight = 01
 ```
 eksctl create cluster --name sockshop-eks-cluster \
   --version 1.20 --region $AWS_REGION \
-  --nodegroup-name standard-workers --node-type t3.medium \
+  --nodegroup-name standard-workers --node-type t3.large \
   --nodes 2 --nodes-min 1 --nodes-max 3 \
   --enable-ssm
 ```
