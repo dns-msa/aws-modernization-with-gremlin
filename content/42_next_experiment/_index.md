@@ -11,8 +11,8 @@ weight = 42
 우리의 아키텍처 환경에 대한 다이어그램은 다음과 같습니다.
 ![sockshop-topology](/images/sockshop-topology.png)
 
-Sock Shop 에서 우리의 **핵심 애플리케이션**은 무엇입니까?
+Sock Shop 에서 우리의 **핵심 애플리케이션(Critical Path)**은 무엇입니까?
 
-Sock Shop 에서 **비 핵심 애플리케이션**은 무엇입니까?
+Sock Shop 에서 **비 핵심 애플리케이션(Non-Critical Path)**은 무엇입니까?
 
 {{% children showhidden="false" %}}
