@@ -51,7 +51,7 @@ aws configure get default.region
 [GetCallerIdentity](https://docs.aws.amazon.com/cli/latest/reference/sts/get-caller-identity.html) CLI 명령을 사용하여 Cloud9 IDE가 올바른 IAM 역할을 사용하고 있는지 확인합니다.
 
 ```
-aws sts get-caller-identity --query Arn | grep Pulumi-Workshop-Admin -q && echo "IAM role valid" || echo "IAM role NOT valid"
+aws sts get-caller-identity --query Arn | grep Gremlin-Workshop-Admin -q && echo "IAM role valid" || echo "IAM role NOT valid"
 ```
 
 <!--
