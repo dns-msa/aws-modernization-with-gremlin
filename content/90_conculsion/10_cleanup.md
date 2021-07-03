@@ -1,11 +1,11 @@
 +++
-title = "Cleanup"
+title = "클린업"
 chapter = false
 weight = 10
 +++
 
-### Cleanup 
-In order to prevent charges to your account we recommend cleaning up the infrastructure that was created. If you plan to keep things running so you can examine the workshop a bit more please remember to do the cleanup when you are done. It is very easy to leave things running in an AWS account, forget about it, and then accrue charges.
+### 클린업 
+AWS 계정에 대한 비용 청구를 방지하려면 생성된 인프라를 정리하는 것이 좋습니다. 작업을 계속 진행하여 워크숍을 좀 더 살펴볼 계획이라면 작업이 끝난 후 정리 작업을 수행하는 것을 잊지 마십시오. AWS 계정에서 실행중인 작업을 그대로두고 잊어 버린다면 추가적인 비용이 발생 할 수 있습니다.
 
 
 
