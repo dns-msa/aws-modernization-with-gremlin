@@ -12,7 +12,7 @@ weight = 10
 
 [Gremlin](https://app.gremlin.com)으로 돌아가서 Shutdown 공격을 구성하는 것으로 시작하겠습니다.
 
-왼쪽 탐색 표시 줄에서 **"New Attack"** 다음에 나오는 **"Attacks"**을 클릭합니다.
+왼쪽 탐색 표시 줄에서 **"Attacks"** 다음에 나오는 **"New Attack"**을 클릭합니다.
 
 ![Gremlin UI New Attack](/images/gremlin_ui_create_new__blackhole_attack.png)
 
