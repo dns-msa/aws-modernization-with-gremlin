@@ -1,15 +1,15 @@
 +++
-title = "Convincing Your Boss"
+title = "보스를 설득하기"
 chapter = true
 weight = 60
 +++
 
-# Convincing Your Boss
+# 보스를 설득하기
 
-Now, it's time to get leadership buy in! First, let's take a look at What does Chaos Engineering Maturity look like. 
+이제 리더십을 발휘해야 할 때입니다! 먼저, 카오스 엔지니어링의 성숙도 모습을 살펴보겠습니다. 
 
 
->The end goal is automated Chaos Engineering Experiments ran across **all** environments for all critical services **continuously**. 
+>최종 목표는 모든 중요 서비스에 대해 **모든* 환경에서 실행되는 **지속적으로* 자동화된 카오스 엔지니어링 실험을 하는 것 입니다.
 
-We will start with small experiments, we will run them in pre-prod environments until we gain the confidence to start running them in production. 
+소규모 실험부터 시작하여 프로덕션 환경에서 실행할 수 있는 자신감을 얻을 때까지 사전 프로덕트 환경에서 실행할 것입니다. 
 
