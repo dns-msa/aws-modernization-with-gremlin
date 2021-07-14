@@ -1,30 +1,30 @@
 +++
-title = "Chaos Engineering Maturity"
+title = "카오스 엔지니어링 성숙도"
 chapter = true
 weight = 10
 +++
 
-# Chaos Engineering Maturity
+# 카오스 엔지니어링 성숙도
 
-### Maturity Model
-To to be successful in your Chaos Engineering Adoption one needs to understand that we need to start small. We want to:
+### 성숙도 모델
+카오스 엔지니어링 채택을 성공하려면 작은 것부터 시작해야 한다는 것을 이해해야 합니다. 우리는 다음과 같은 것을 원합니다.:
 
-+ introduce Chaos Engineering into one service/team at a time
-+ Start with low magnitude experiments and environments 
-+ Automate attacks (Scheduling or via API and CI/CD pipelines)
-+ Schedule recurring GameDays and FireDrills
-+ Reproduce a previous outage in production
++ 카오스 엔지니어링을 한 번에 한 서비스/팀으로 통합합니다.
++ 규모가 작은 실험 및 환경에서 시작합니다. 
++ 공격 자동화 (예약 또는 API 및 CI / CD 파이프 라인을 통해)
++ 반복적인 GameDays 및 FireDrill 스케줄
++ 이전의 운영 중단 재현
 
 
 
-### Building a Business Case
-When you talk to your boss frame your Chaos Engineering suggestions in terms of how it will help meet and exceed goals that already exist. Examples of these are:
+### 비즈니스 사례 구축
+상사와 이야기할 때 이미 존재하는 목표를 충족하고 초과하는 데 어떤 도움이 될 것인가와 관련하여 Chaos Engineering 제안을 액자에 넣으십시오. 이러한 예는 다음과 같습니다:
 + SLA/SLOs
-+ Cost of Downtime
-+ Length and impact of outages
-+ Customer issues/complaints
++ 다운타임 발생시의 비용
++ 운영 중단의 지속 시간 및 영향
++ 고객 문제/불만 사항
 
-In order to be successful in your discussion you should also have some metrics around the cost of downtime for your organization and how the services you work on contribute to it. You want to understand which applications have the organization gets paged for the most and the applications that are the largest High Severity Incidents.
+상사와의 토론을 성공적으로 진행하려면 다운타임 비용 및 다운타임에 대한 서비스 제공 방식에 대한 몇 가지 지표도 제시해야 합니다. 조직에서 가장 많이 호출되는 응용 프로그램과 가장 큰 심각도 장애를 가진 응용 프로그램을 파악하려고 합니다.
 
-You can learn more about Gremlin's Customer's wins via our [Case Studies](http://gremlin.com/customers). 
-If you are interested in learning more about this, feel free to read Gremlin's playbook on ["How to Convince Your Organization to Adopt Chaos Engineering"](https://www.gremlin.com/champion-playbook/)
+Gremlin의 고객 성공 사례에 대한 자세한 내용은 다음을 참조하십시오. [Case Studies](http://gremlin.com/customers). 
+이것에 대해 더 알고 싶다면, 얼마든지 Gremlin의 플레이북을 읽어보세요. ["How to Convince Your Organization to Adopt Chaos Engineering"](https://www.gremlin.com/champion-playbook/)
